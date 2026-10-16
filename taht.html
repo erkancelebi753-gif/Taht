@@ -352,4 +352,5 @@ function render(){
  const ds=$('.dk'),key=tab||'p'+S.pc,sc=S.dkk===key&&ds?ds.scrollTop:0;if(S.cities.length)S.dkk=key;A.innerHTML=h;{const d2=$('.dk');if(d2)d2.scrollTop=sc}if(S.cities.length)paintT();scrollTo(0,y)}
 if(typeof addEventListener=='function')addEventListener('resize',()=>render());
 render();
-</script></body></html>
+</script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
+</body></html>
